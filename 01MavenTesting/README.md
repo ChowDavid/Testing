@@ -171,6 +171,7 @@ Empty Test Case,,You input ,,end
 123 test Case,123,You input 123,,end
 Hello Test Case,Hello,You input hello,,end
 ```
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14143423/b1632106-f6bd-11e5-891f-459ba80ef578.png)
 ###Step 2 Create a Test case with implementation runwith
 The method below inside the test case to create a Collection of object array. It design to read the CSV file from the test case resource above.
 ```java
