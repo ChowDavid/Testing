@@ -3,17 +3,29 @@ This Section is about the concept of testing
 we need to know about [black-box testing](https://en.wikipedia.org/wiki/Black-box_testing) and [white-box testing](https://en.wikipedia.org/wiki/White-box_testing), [boundary testing](https://en.wikipedia.org/wiki/Boundary_testing), [positive and negative test case](http://www.nishantverma.com/2010/03/test-case-paths-happy-sad-bad.html).
 The test code should be invisible to the deployment binary. The test cases should be cover all the possible logical branch. The test results should be consistency. The test case should run automatically.
 
+Something not to do:
+- Don't only write main program as your test case.
+- Don't expected UAT or SIT can find lot of problem.
+- Don't reply on Human tester. 
+- Don't write any test code on the production code.
+
 ##Test approach development
 - Testable code 
 - Test performance
 - Test case design
 - Dummy, Mock, Stub
 
-##Test Tools
+##Test Tools & framework
 There are some test tools out of the box
 - JMeter
 - SOAPUI
-- Selenium Test said [sauce](https://saucelabs.com/selenium/)
+- Selenium UI test
+- Cloud base UI Test said [sauce](https://saucelabs.com/selenium/)
+- sonar
+- JUnit
+- TestNG
+- Mockit
+- 
 
 
 ###Testable code
@@ -22,7 +34,7 @@ Each end-point should be test as much as possible.
 Each DAO end-point class should be test by In-memory Datasource in-order to confirm the CURD operation can run correctly.
 Each WS client end-point should has a dummy WS server to provide a test case during unit test.
 Each WS server end-point should has a dummy WS client to call in-order to execute the unit test.
-So that the code should not be hardcoded and it should be decoupling each other. 
+So that the code should not be hard coded and it should be decoupling each other. 
 
 ###Testing performance
 Test should be consider speed. So that it should made use of mock and expected response form mock. It should not connect the device (external resource) as test dependence. It should mock everything on every end-point.
