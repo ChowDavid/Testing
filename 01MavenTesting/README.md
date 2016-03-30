@@ -57,4 +57,51 @@ This project demo how basic setting on junit test on a maven project
 		assertEquals("You input ", app.process1(null));
 	}
 ```
-    
+ ##Step 5 Run the test on maven
+ ```maven
+ davids-MacBook-Pro:01MavenTesting david$ mvn test
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building 01MavenTesting 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ 01MavenTesting ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/david/Documents/workspaces/workspace_Training/Testing/01MavenTesting/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ 01MavenTesting ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/david/Documents/workspaces/workspace_Training/Testing/01MavenTesting/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ 01MavenTesting ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/david/Documents/workspaces/workspace_Training/Testing/01MavenTesting/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ 01MavenTesting ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/david/Documents/workspaces/workspace_Training/Testing/01MavenTesting/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ 01MavenTesting ---
+[INFO] Surefire report directory: /Users/david/Documents/workspaces/workspace_Training/Testing/01MavenTesting/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.david.MavenTesting.AppTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.948 s
+[INFO] Finished at: 2016-03-30T16:33:32+08:00
+[INFO] Final Memory: 13M/245M
+[INFO] ------------------------------------------------------------------------
+davids-MacBook-Pro:01MavenTesting david$ 
+ 
+```
