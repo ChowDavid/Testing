@@ -255,3 +255,4 @@ Results :
 
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 1
 ```
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14143569/99c4139c-f6be-11e5-9878-668672844c94.png)
