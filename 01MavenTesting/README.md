@@ -1,8 +1,9 @@
 #Java Maven Test Project
-This project demo how JUnit testing setting on a maven can help
+This project demo show how JUnit integrate with Maven
 - Section A @Test
 - Section B @BeforeTest, @AfterTest, @BeforeClass, @AfterClass, @Ignore
 - Section C @RunWith(Parameterized.class)
+
 
 ##Section A Test Basic @Test
 ###Step 1 change the maven project to support 1.6 and higher
