@@ -3,6 +3,8 @@ This project demo how JUnit testing setting on a maven can help
 - Section A @Test
 - Section B @BeforeTest, @AfterTest, @BeforeClass, @AfterClass, @Ignore
 - Section C @RunWith(Parameterized.class)
+
+
 ##Section A Test Basic @Test
 ###Step 1 change the maven project to support 1.6 and higher
 ```xml
