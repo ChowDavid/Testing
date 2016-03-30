@@ -1,0 +1,1 @@
+TestCase,TestValue,ExpectedValue,exception,endNull Test Case,NULL,,java.lang.NullPointerException,endEmpty Test Case,,You input ,,end123 test Case,123,You input 123,,endHello Test Case,Hello,You input hello,,end
