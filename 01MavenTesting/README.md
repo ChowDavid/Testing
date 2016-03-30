@@ -1,7 +1,7 @@
 #Java Maven Test Project
 This project demo how basic setting on junit test on a maven project
 ##Step 1 change the maven project to support 1.6 and higher
-```
+```xml
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
@@ -9,8 +9,7 @@ This project demo how basic setting on junit test on a maven project
 	</properties>
 ```
 ##Step 2 change the dependence to latest Junit version and set to scope as test
-```
-	
+```xml
 	<dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
