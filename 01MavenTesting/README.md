@@ -3,6 +3,7 @@ This project demo how JUnit testing setting on a maven can help
 - Section A @Test
 - Section B @BeforeTest, @AfterTest, @BeforeClass, @AfterClass, @Ignore
 - Section C @RunWith(Parameterized.class)
+
 ##Section A Test Basic @Test
 ###Step 1 change the maven project to support 1.6 and higher
 ```xml
@@ -255,3 +256,4 @@ Results :
 
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 1
 ```
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14143569/99c4139c-f6be-11e5-9878-668672844c94.png)
