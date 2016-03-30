@@ -9,6 +9,13 @@ The test code should be invisible to the deployment binary. The test cases shoul
 - Test case design
 - Dummy, Mock, Stub
 
+##Test Tools
+There are some test tools out of the box
+- JMeter
+- SOAPUI
+- Selenium Test said [sauce](https://saucelabs.com/selenium/)
+
+
 ###Testable code
 Each Service class should had a unit test cases to check before code submit to SCM. The test case should include boundary test case and also the positive test and negative test case. It should also consider the test case can trigger the exception in case it need to connect other device said file read/write, db connection, ftp connection. those can be use the dummy to trigger the exception during test exec time.The service end-point said DAO, FTP, Communicate end point should be mock before testing.
 Each end-point should be test as much as possible.
@@ -21,7 +28,7 @@ So that the code should not be hardcoded and it should be decoupling each other.
 Test should be consider speed. So that it should made use of mock and expected response form mock. It should not connect the device (external resource) as test dependence. It should mock everything on every end-point.
 
 ###Test case design
-A number test case should consider Max value, Min Value, expected Value, expected +1 and expected -1 value. Overflow? or exception as input form callee module.
+ Test cases should consider Max value, Min Value, expected Value, expected +1 and expected -1 value. Overflow? or exception as input form callee module.
 Test should also consider concurrent test. So that test can also consider more than one thread to trigger the system. It can find a bug if a large loading concurrent testing on a web server.
 
 ###Dummy, Mock, Stub

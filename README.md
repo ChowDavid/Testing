@@ -4,4 +4,5 @@
 - 02 Integrate Spring into Junit Testing
 - 03 Integrate a DAO with a Spring mock about DAO and use DAO in-memory DB for quick development
 
+#To checkout the code can checkout from [gitHub](https://github.com/ChowDavid/Testing.git).
 
