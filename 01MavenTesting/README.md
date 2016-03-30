@@ -105,3 +105,55 @@ Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
 davids-MacBook-Pro:01MavenTesting david$ 
  
 ```
+##Other then test case
+It has beforetest, aftertest, beforeclass, afterclass and ignore. Please note the before and after class are static method. that means it is one and only one call on the unit test.
+```java
+@BeforeClass
+	public static void beforeClass(){
+		System.out.println("Before class exec");
+	}
+	
+	@Before
+	public void beforeTest(){
+		System.out.println("Before for each test case");
+	}
+	
+	@AfterClass
+	public static void afterClass(){
+		System.out.println("After class exec");
+	}
+	
+	@After
+	public void afterTest(){
+		System.out.println("After for each test case");
+	}
+	
+	@Ignore @Test
+	public void test_not_run(){
+		fail("This test case should not run");
+	}
+```
+If test case run it will show the skip and and also the call flow
+```maven
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.david.MavenTesting.AppTest
+Before class exec
+Before for each test case
+After for each test case
+Before for each test case
+After for each test case
+Before for each test case
+After for each test case
+Before for each test case
+After for each test case
+Before for each test case
+After for each test case
+After class exec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.069 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1
+```
