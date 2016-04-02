@@ -36,7 +36,7 @@ public class AppTest {
 	@Test
 	public void test_happy() {
 		App app=new App();
-		assertEquals("You input 1234", app.process1("123"));
+		assertEquals("You input 123", app.process1("123"));
 	}
 	
 	@Test
