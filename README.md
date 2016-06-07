@@ -12,6 +12,12 @@ Spring integration is a great topics. It show how it works.
 ##03 Spring Dao Mock Testing
 It show a sample of how DAO are Mocked before and after the mock.
 
+##04 Easy Mock Testing
+It show a very simple case to use EasyMock. but it looks not easy as it said
+
+##05 Mockito Testing
+It has many method more than easyMock.
+
 
 ##Checkout the code is easy
 1. Install git on your system.
